@@ -16,11 +16,12 @@ export function update() {
 }
 
 export function dibujar(tablero) {
-        cuerpoSerpiente.forEach(parte =>{
+        cuerpoSerpiente.forEach((parte,index) =>{
             const parteSerpiente = document.createElement('div')
             parteSerpiente.style.gridRow = parte.y
             parteSerpiente.style.gridColumn = parte.x
             parteSerpiente.classList.add('snake')
+            if(index===0){parteSerpiente.classList.add('cabeza')}
             tablero.appendChild(parteSerpiente)
         })
 }
