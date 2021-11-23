@@ -2,7 +2,8 @@ let inputDireccion = {x:0,y:0}
 let ultimoInputDireccion = {x:0,y:0} 
 
 window.addEventListener('keydown' , k=>{
-    switch (k.key) {
+
+    switch (k.key.toLowerCase()) {
 
         case "a":
             if(ultimoInputDireccion.x !== 0)  break
