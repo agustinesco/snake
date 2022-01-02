@@ -11,7 +11,7 @@ import { update as updateComida , dibujar as dibujarComida } from "./comida.js";
 function main(tiempoActual) {
     if(gameOver){
         if(confirm("Presiona aceptar para volver a jugar")){
-            window.location = 'https://agustinesco.github.io/snake-html/' //refresca la pagina 
+            document.location.reload() //refresca la pagina 
         }else{
             return
         }
